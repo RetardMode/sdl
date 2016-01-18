@@ -41,6 +41,15 @@
 #define __SSE__
 #define __SSE2__
 #elif defined(__MINGW64_VERSION_MAJOR)
+#ifndef __MMX__
+#define __MMX__
+#endif
+#ifndef __SSE__
+#define __SSE__
+#endif
+#ifndef __SSE2__
+#define __SSE2__
+#endif
 #include <intrin.h>
 #else
 #ifdef __ALTIVEC__

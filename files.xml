@@ -19,6 +19,11 @@
 
             <compilerflag value="-DUSING_GENERATED_CONFIG_H" />
             <compilerflag value="-DNATIVE_TOOLKIT_SDL_ANGLE" if="NATIVE_TOOLKIT_SDL_ANGLE" />
+            
+			<compilerflag value="-msse" if="mingw"/> 
+			<compilerflag value="-msse2" if="mingw"/>
+			<compilerflag value="-msse3" if="mingw"/>
+			<compilerflag value="-m3dnow" if="mingw"/>
 
         </section>
 
